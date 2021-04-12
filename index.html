@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Journal Entry Website
+        </title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fknowyourmeme.com%2Fmemes%2Fdababy-convertible&psig=AOvVaw0juKsOPKC6DF_Y4F-CA34t&ust=1618287917721000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPCQq7bu9-8CFQAAAAAdAAAAABAD">
+    </head>
+    <body>
+        <header>
+            <div>Journal Entries</div>
+            <nav>
+                <ul>
+                    <li><a href="#d1">Friday, June 9</a></li>
+                    <li><a href="#d2">Saturday, June 10</a></li>
+                    <li><a href="#d3">Sunday, June 11</a></li>
+                </ul>
+                <span>--There exists nothing--</span>
+            </nav>
+        </header>
+        <hr size="5">
+        <main>
+            <h1>Here's the uneventful content:</h1>
+            <h2 id="d1">Day 1</h2>
+                <section>
+                    <h3>Friday (June 9)</h3>
+                    <div>Things to do</div>
+                    <ol>
+                        <li>Finish shift</li>
+                        <li>Finish MMW</li>
+                        <li>Pack up</li>
+                    </ol>
+                    <p>
+                        It's somewhat stressful going on a trip to <b>Hawaii</b> when you, <i>unlike your sister</i>, are not on break.
+                    </p>
+                    <video width="320" height="240" controls>
+                        <source src="yt1s.com - Dababy  Suge Yea Yea Official Music Video_v720P.mp4">
+                    </video>
+                    <audio>
+                        <source src="Bruh Sound Effect #2.mp3">
+                    </audio>
+                </section>
+            <h2 id="d2">Day 2</h2>
+                <section>
+                    <h3>Saturday (June 10)</h3>
+                    <div>Things to do</div>
+                    <ol>
+                        <li>Unpack stuff</li>
+                        <li>Get ready</li>
+                        <li>Finish CSE 101</li>
+                    </ol>
+                    <p>
+                        I'm getting frustrated at the fact that <strong>all</strong> my due dates for my classes are on the weekend, but it's understandable since I have classes during then and most students prefer it <em>that</em> way.
+                    </p>
+                </section>
+            <h2 id="d3">Day 3</h2>
+                <section>
+                    <h3>Sunday (June 11)</h3>
+                    <div>Things to do</div>
+                    <ol>
+                        <li>Get ready</li>
+                        <li>Finish lab</li>
+                    </ol>
+                    <p>
+                        Hopefully I finish lab on time; I didn't realize that this stuff was going to be so long!
+                        <br>
+                        Turns out that my friend hasn't finished either, I hope he gets it done as well!
+                    </p>
+                </section>
+        </main>
+        <footer>
+            <details>
+                <summary>Random dropdown tab</summary>
+                Hello!
+            </details>
+            <hr size="20">
+            <form onsubmit="alert('You have submitted a new journal entry!')">
+                <fieldset>
+                    <input type="radio" id="checkbox" name="list">
+                    <label for="checkbox">Make Checkbox</label><br>
+
+                    <input type="radio" id="radio" name="list">
+                    <label for="radio">Make Radio</label><br>
+
+                    <input type="radio" id="Dropdown" name="list">
+                    <label for="Dropdown">Make Dropdown</label>
+                </fieldset>
+                <hr size="10">
+                <fieldset>
+                    <input type="checkbox" id="c1">
+                    <label for="c1">Things to do</label><br>
+                    <input type="checkbox" id="c2">
+                    <label for="c2">List of highlights/lowlights</label><br>
+                    <input type="checkbox" id="c3">
+                    <label for="c3">Actual text entry</label><br>
+                </fieldset>
+                <hr size="10">
+                <fieldset>
+                    <input type="text" id="titleEntry">
+                    <label for="titleEntry">Title goes here</label>
+                </fieldset>
+                <hr size="10">
+                <fieldset>
+                    <input type="text" id="journalEntry">
+                    <label for="journalEntry">Your entry:</label>
+                    <textarea id="journalEntry" rows="5" cols="25">
+                        Today I...
+                    </textarea>
+                </fieldset>
+                <hr size="10">
+                <fieldset>
+                    <input type="date" id="dateEntry">
+                    <label for="dateEntry">Enter date</label>
+                </fieldset>
+                <hr size="10">
+                <fieldset>
+                <label for="Gender">What is your gender?</label>
+                <input list="genderChoice" id="Gender">
+
+                <datalist id="genderChoice">
+                    <option value="Male">
+                    <option value="Female">
+                    <option value="Other">
+                </datalist>
+                </fieldset>
+                <hr size="10">
+                <label for="dayfeeling">Today I feel...</label>
+                <select name="df" id="dayfeeling">
+                    <option value="">--Please choose one--</option>
+                    <option value="happy">Happy</option>
+                    <option value="sad">Sad</option>
+                    <option value="dirty">Dirty</option>
+                </select>
+                <button>Submit entry</button>
+            </form>
+        </footer>
+    </body>
+</html>
