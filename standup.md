@@ -1,0 +1,11 @@
+- What did I work on yesterday?
+- [X] Coding
+- [ ] Scripting
+- [ ] Debugging
+- What am I working on today?
+- [ ] Coding
+- [X] Scripting
+- [ ] Debugging
+- What issues am I running into?
+- [ ] Bug
+- [X] Need info
