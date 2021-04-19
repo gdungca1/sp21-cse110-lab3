@@ -1,0 +1,99 @@
+/* elements and stuff */
+.box {
+    color: rgb(228, 24, 24);
+}
+
+@media only screen and (max-width: 800px) {
+    * {
+        font-style: italic;
+    }
+}
+
+#d1 {
+    color: #abc;
+    border-style:groove;
+    border-color: blue;
+    border-radius: 1in;
+    border-width: .5em;
+}
+
+#d2 {
+    position: sticky;
+    color: #c7d622;
+    border-style: dotted;
+    border-color: green;
+    border-radius: 3cm;
+}
+
+#d3 {
+    color: #8414a3;
+    border-style:ridge;
+    border-color:darkorange;
+    border-width:4px;
+}
+
+* {
+    background-color: aquamarine;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+div {
+    height: 1cm;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+a[target=bruh] {
+    color: red
+}
+
+li:hover {
+    color:green
+}
+
+li:active {
+    color:hsl(175, 40, 60)
+}
+
+header, footer {
+    max-width: 5in;
+    height: max-content;
+}
+
+ul li {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 50px;
+}
+
+input {
+    color:chocolate;
+    text-decoration: wavy;
+}
+
+ol li {
+    list-style-type: square;
+    size: 10px;
+    font-size: 1rem;
+    text-align:justify;
+}
+
+header > div {
+    padding: 5px 5px 5px 5px;
+}
+
+h1 ~ p {
+    display:block;
+}
+
+ol + p {
+    display:inline;
+    font-size: 1em;
+}
+
+fieldset.box {
+    color:green
+}

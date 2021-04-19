@@ -1,6 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="journal1.css">
     <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <style>
+            #d1 {
+                position: -webkit-sticky;
+                position:sticky;
+                top: 30px;
+            }
+
+            .flexcontain {
+                display: flex;
+                flex-wrap: wrap;
+                flex-basis: auto;
+                flex-direction:column;
+            }
+
+            .flexcontain > div {
+                background-color: yellowgreen;
+                width: 400px;
+                margin: 10px;
+                text-align: center;
+                line-height: 40px;
+                font-size: 1em;
+            }
+
+            .gridcontain {
+                display: grid;
+                grid-template-rows: auto auto auto auto auto;
+                grid-template-columns: auto auto auto;
+            }
+
+            .item1, .item5, .item9 {
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+
+            .gridcontain > div {
+                text-align:center;
+                font-size:20px;
+            }
+
+        </style>
         <title>
             Journal Entry Website
         </title>
@@ -9,19 +51,26 @@
     </head>
     <body>
         <header>
+            
+            <div class="flexcontain">
+                <div>Day 1</div>
+                <div>Day 2</div>
+                <div>Day 3</div>
+            </div>
+
             <div>Journal Entries</div>
             <nav>
                 <ul>
                     <li><a href="#d1">Friday, June 9</a></li>
-                    <li><a href="#d2">Saturday, June 10</a></li>
-                    <li><a href="#d3">Sunday, June 11</a></li>
+                    <li><a href="#d2" target="bruh">Saturday, June 10</a></li>
+                    <li><a href="#d3" target="moment">Sunday, June 11</a></li>
                 </ul>
                 <span>--There exists nothing--</span>
             </nav>
         </header>
-        <hr>
+        <hr class="box">
         <main>
-            <h1>Here's the uneventful content:</h1>
+            <h1>Here's the <p>(unfortunately)</p>uneventful content:</h1>
             <h2 id="d1">Day 1</h2>
                 <section>
                     <h3>Friday (June 9)</h3>
@@ -34,7 +83,7 @@
                     <p>
                         It's somewhat stressful going on a trip to <b>Hawaii</b> when you, <i>unlike your sister</i>, are not on break.
                     </p>
-                    <video width="320" height="240" controls>
+                    <video width="1080" height="600" controls style="position:absolute;top:11.5in;left:6in">
                         <source src="dababysuge.mp4">
                     </video>
                     <audio>
@@ -76,7 +125,7 @@
             </details>
             <hr>
             <form onsubmit="alert('You have submitted a new journal entry!')">
-                <fieldset>
+                <fieldset class="box">
                     <input type="radio" id="checkbox" name="list">
                     <label for="checkbox">Make Checkbox</label><br>
 
@@ -87,7 +136,7 @@
                     <label for="Dropdown">Make Dropdown</label>
                 </fieldset>
                 <hr>
-                <fieldset>
+                <fieldset class="circle">
                     <input type="checkbox" id="c1">
                     <label for="c1">Things to do</label><br>
                     <input type="checkbox" id="c2">
@@ -96,12 +145,12 @@
                     <label for="c3">Actual text entry</label><br>
                 </fieldset>
                 <hr>
-                <fieldset>
+                <fieldset class="box">
                     <input type="text" id="titleEntry">
                     <label for="titleEntry">Title goes here</label>
                 </fieldset>
                 <hr>
-                <fieldset>
+                <fieldset class="circle">
                     <input type="text" id="journalEntry">
                     <label for="journalEntry">Your entry:</label>
                     <textarea id="jour" rows="5" cols="25">
@@ -115,7 +164,7 @@
                 </fieldset>
                 <hr>
                 <fieldset>
-                <label for="Gender">What is your gender?</label>
+                <label for="Gender"><p style="font-family: 'Tangerine', serif;">What is your gender?</p></label>
                 <input list="genderChoice" id="Gender">
 
                 <datalist id="genderChoice">
@@ -134,6 +183,17 @@
                 </select>
                 <button>Submit entry</button>
             </form>
+            <div class="gridcontain">
+                <div class="item1">PepeLaugh</div>
+                <div class="grid-item">KEKW</div>
+                <div class="grid-item">OMEGALUL</div>  
+                <div class="grid-item">Kappa</div>
+                <div class="item5">TriHard7</div>
+                <div class="grid-item">LULW</div>  
+                <div class="grid-item">Sadge</div>
+                <div class="grid-item">Peepo</div>
+                <div class="item9">KappaPride</div>  
+            </div>
         </footer>
     </body>
 </html>
